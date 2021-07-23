@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Yevhenii-Bezeha.github.io/parcel-project-template",
+  "homepage": "https://Yevhenii-Bezeha.github.io/bc-project-team-2",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /bc-project-team-2/"
   },
   "repository": {
     "type": "git",
