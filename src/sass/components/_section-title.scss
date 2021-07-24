@@ -1,0 +1,51 @@
+.section-title {
+font-family: 'Titan One', cursive;
+font-size: 34px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #D41443;
+
+@media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+@media screen and (min-width: 1200px) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
+
+&_locate_footer {
+    text-align: justify;
+}  
+
+&__up-text {
+font-family: 'Titan One', cursive;
+font-size: 18px;
+line-height: 1.16;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFA5BA;
+
+@media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+
+  &_locate_footer {
+    text-align: justify;
+}
+
+}
+
+
+}
+
