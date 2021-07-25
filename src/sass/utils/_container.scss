@@ -1,16 +1,21 @@
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
+  @include for-phone {
     max-width: 480px;
   }
-  @media screen and (min-width: 768px) {
+
+  
+  @include for-tablet {
     max-width: 768px;
   }
-  @media screen and (min-width: 1050px) {
-    max-width: 1200px;
+
+  
+  @include for-desktop {
+    max-width: 1050px;
   }
 }
