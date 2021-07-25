@@ -1,0 +1,5 @@
+.btn-mob {
+  @include for-desktop {
+    display: none;
+  }
+}

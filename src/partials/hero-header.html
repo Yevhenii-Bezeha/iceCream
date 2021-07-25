@@ -3,7 +3,10 @@
 <header>
   <div class="header-container">
     <a class="logo-link" href="./">
-      <img class="logo-img" src="" alt="Логотип" />
+      <picture>
+        <source srcset="./images/mobile/logo-min.png 1x" media="(min-width: 320px)" />
+        <img class="logo-img" src="./images/mobile/logo-min.png" alt="Логотип" />
+      </picture>
     </a>
 
     <nav class="nav-menu">
@@ -19,12 +22,12 @@
         <li class="nav-menu__item"><a class="nav-menu__link" lang="en" href="#">Contact</a></li>
       </ul>
     </nav>
-    <button class="btn" type="button">
+    <button class="btn btn-mob" type="button">
       <svg class="" width="20" height="12">
         <use></use>
       </svg>
     </button>
-    <button class="btn" type="button" lang="en">
+    <button class="btn btn-buy" type="button" lang="en">
       Buy now
       <span>
         <svg class="" width="4" height="8">
@@ -37,37 +40,48 @@
 
 <!-- section-hero -->
 
-<section class="section section-hero">
+<section class="section-hero">
   <div class="container">
-    <div class="title-wrap">
-      <h1 class="hero-title" lang="en">
-        ice cream made with <span class="hero-title__passion" lang="en">passion</span>
-      </h1>
-      <div class="title-btn-wrap">
-        <button class="btn" type="button" lang="en">Products</button>
-        <button class="btn" type="button" lang="en">How it’s made?</button>
+    <h1 class="hero-title" lang="en">
+      ice cream made with <span class="hero-title__passion" lang="en">passion</span>
+    </h1>
+    <div class="title-btn-wrap">
+      <button class="btn" type="button" lang="en">Products</button>
+      <button class="btn" type="button" lang="en">How it’s made?</button>
+    </div>
+
+    <div class="bg-circle"></div>
+
+    <div class="infrastructure-wrap">
+      <span class="infrastructure-info">16</span>
+      <span class="infrastructure-info">23</span>
+    </div>
+    <div class="additional-info">
+      <img class="hero-img hero-img_left" src="" alt="Прозрачный кувшин с молоком" />
+      <div class="additional-info__wrap">
+        <p class="additional-info__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="btn" type="button">
+          <svg class="" width="4" height="8">
+            <use></use>
+          </svg>
+        </button>
+        <img class="hero-img hero-img_right" src="" alt="Девушка с мороженым" />
       </div>
     </div>
-  </div>
-  <div class="bgr-circle"></div>
-  <div class="infrastructure-wrap">
-    <span class="infrastructure-info">16</span>
-    <span class="infrastructure-info">23</span>
-  </div>
-  <div class="additional-info">
-    <img class="hero-img hero-img_left" src="" alt="Прозрачный кувшин с молоком" />
-    <div class="additional-info__wrap">
-      <p class="additional-info__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <button class="btn" type="button">
-        <svg class="" width="4" height="8">
-          <use></use>
-        </svg>
-      </button>
+    <div class="hero-img-center">
+      <picture class="hero-img">
+        <source
+          srcset="
+            ./images/mobile/hero-isecr-mob2x-min.png 2x,
+            ./images/mobile/hero-isecr-mob-min.png   1x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/mobile/hero-isecr-mob2x-min.png" alt="Разноцветное мороженое в рожке" />
+      </picture>
     </div>
-    <img class="hero-img hero-img_center" src="" alt="Разноцветное мороженое в рожке" />
-    <img class="hero-img hero-img_right" src="" alt="Девушка с мороженым" />
   </div>
 </section>

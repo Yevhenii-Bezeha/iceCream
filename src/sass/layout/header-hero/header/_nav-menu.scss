@@ -1,0 +1,7 @@
+.nav-menu {
+  display: none;
+
+  @include for-desktop {
+    display: block;
+  }
+}
