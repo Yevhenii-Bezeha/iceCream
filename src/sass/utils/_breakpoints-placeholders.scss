@@ -7,5 +7,5 @@
 }
 
  @mixin for-desktop {
-  @media (min-width: 1050px) { @content; }
+  @media (min-width: 1280px) { @content; }
 }
