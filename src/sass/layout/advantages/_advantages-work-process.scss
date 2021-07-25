@@ -1,0 +1,36 @@
+.advantages-section {
+  background: #fff5f6;
+  padding-bottom: 97px;
+  padding-right: 50px;
+}
+.advantages-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__numer {
+    display: block;
+
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    color: #d41443;
+    &_mb {
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #000000;
+  }
+  &__item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 120px) / 3);
+    }
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+}
