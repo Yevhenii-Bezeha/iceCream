@@ -1,7 +1,6 @@
 .advantages-section {
   background: #fff5f6;
   padding-bottom: 97px;
-  padding-right: 50px;
 }
 .advantages-list {
   @include for-tablet {
@@ -16,11 +15,16 @@
     line-height: 1.14;
     letter-spacing: 0.04em;
     color: #d41443;
+
+    @include for-desktop {
+      font-size: 58px;
+      line-height: 1.14;
+    }
+    @include for-tablet {
+      margin-top: 36px;
+    }
     &_mb {
       margin-bottom: 15px;
-      @include for-tablet {
-        margin-top: 36px;
-      }
     }
     &_pseudo_milk::before {
       content: '';
@@ -29,6 +33,12 @@
       width: 33px;
       height: 50px;
       margin-bottom: 16px;
+      @include for-tablet {
+        margin-bottom: 36px;
+      }
+      @include for-desktop {
+        margin-bottom: 40px;
+      }
     }
     &_pseudo_apple::before {
       content: '';
@@ -37,6 +47,12 @@
       width: 50px;
       height: 50px;
       margin-bottom: 16px;
+      @include for-tablet {
+        margin-bottom: 36px;
+      }
+      @include for-desktop {
+        margin-bottom: 40px;
+      }
     }
     &_pseudo_heart::before {
       content: '';
@@ -45,6 +61,12 @@
       width: 44px;
       height: 50px;
       margin-bottom: 16px;
+      @include for-tablet {
+        margin-bottom: 36px;
+      }
+      @include for-desktop {
+        margin-bottom: 40px;
+      }
     }
   }
   &__text {
@@ -52,13 +74,20 @@
     font-size: 12px;
     line-height: 1.7;
     color: #000000;
+    @include for-desktop {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+    }
   }
   &__item {
     @include for-tablet {
       width: calc((100% - 120px) / 3);
     }
-    &:not(:last-child) {
-      margin-bottom: 38px;
+    @media screen and (max-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 38px;
+      }
     }
   }
 }

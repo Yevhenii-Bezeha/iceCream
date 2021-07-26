@@ -1,23 +1,33 @@
-.about-section {
+.about-container {
   position: relative;
+}
+.about-section {
   background-color: #fff5f6;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
+  background-image: url(../images/mobile/cow-bg-mob-min.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom 75px right;
+
   padding-top: 125px;
   padding-bottom: 39px;
   &__image-cow {
     @include for-tablet {
-      width: 50%;
+      flex-basis: calc((100% - 20px) / 2);
     }
   }
-  &__milk-bg {
-    position: absolute;
-    top: 750px;
-    left: 0;
+  // &__milk-bg {
+  //   position: absolute;
+  //   top: 750px;
+  //   left: 0;
 
-    width: 100vw;
-    @include for-tablet {
-      display: none;
-    }
-  }
+  //   width: 100vw;
+  //   @media screen and (min-width: 768px) and (max-width: 1279px) {
+  //     display: none;
+  //   }
+  // }
   &__content-box {
     @include for-tablet {
       display: flex;
@@ -41,20 +51,37 @@
     &_size_margin {
       margin-bottom: 47px;
     }
+    @include for-tablet {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+    @include for-desktop {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
   }
   &__suptext {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
     color: #907e82;
+    @include for-tablet {
+      font-size: 14px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+    }
+    @include for-desktop {
+      line-height: 1.94;
+    }
   }
   &__text-box {
-    margin-top: 47px;
+    margin-top: 50px;
     margin-bottom: 17px;
-    padding: 0 30px;
     @include for-tablet {
-      padding: 0 30px 0 17px;
-      width: 50%;
+      flex-basis: calc((100% - 20px) / 2);
+    }
+    @include for-desktop {
+      padding-left: 54px;
     }
   }
   &__button-box {
@@ -63,9 +90,19 @@
     align-items: center;
 
     margin-left: 50px;
+    @include for-tablet {
+      margin-left: 360px;
+      margin-top: 56px;
+    }
     background: #ffffff;
     border-radius: 22px;
     width: 176px;
     height: 44px;
+    @include for-desktop {
+      position: absolute;
+      right: 300px;
+      bottom: 115px;
+      margin: 0;
+    }
   }
 }
