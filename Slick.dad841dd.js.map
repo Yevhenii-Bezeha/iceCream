@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/Slick.js"],"names":["$","slick","arrows","dots"],"mappings":";AAAAA,EAAE,eAAeC,MAAM,CACnBC,QAAQ,EACRC,MAAM","file":"Slick.dad841dd.js","sourceRoot":"../src","sourcesContent":["$('.slider-box').slick({\n    arrows: false,\n    dots: true\n});\n"]}
