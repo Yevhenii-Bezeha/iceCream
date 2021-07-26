@@ -1,0 +1,33 @@
+.section-hero {
+  position: relative;
+  z-index: 0;
+  padding-top: 193px;
+  padding-bottom: 160px;
+  background-color: pink;
+  overflow: hidden;
+}
+
+.infrastructure-wrap,
+.additional-info {
+  display: none;
+}
+
+.bg-circle {
+  position: absolute;
+  z-index: -1;
+  top: 83px;
+  left: 35px;
+  width: 346px;
+  height: 346px;
+  border-radius: 50%;
+  background-color: rgb(245, 151, 167);
+}
+
+.hero-img-center {
+  width: 171px;
+  height: 410px;
+  position: absolute;
+  z-index: -1;
+  left: 117px;
+  top: 92px;
+}

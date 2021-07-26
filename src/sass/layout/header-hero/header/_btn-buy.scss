@@ -1,0 +1,6 @@
+.btn-buy {
+  display: none;
+  @include for-tablet {
+    display: block;
+  }
+}

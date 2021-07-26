@@ -1,0 +1,21 @@
+.hero-title {
+  width: 225px;
+  margin-bottom: 19px;
+
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  &__passion {
+    font-family: Titan One;
+    font-size: 48px;
+    line-height: 0.97;
+    text-transform: uppercase;
+
+    color: #d41443;
+  }
+}
