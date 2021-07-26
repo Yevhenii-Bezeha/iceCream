@@ -1,0 +1,39 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  @include for-tablet {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &_bgc_accent {
+    background-color: $accent-color;
+    color: $main-light-color;
+
+    &:hover,
+    &:focus {
+      background-color: $button-primary-hover;
+    }
+  }
+
+  &_bgc_main-light-color {
+    background-color: $main-light-color;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $button-secondary-hover;
+    }
+  }
+}
