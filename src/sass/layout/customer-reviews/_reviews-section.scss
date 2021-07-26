@@ -1,0 +1,86 @@
+.review {
+  &__img-box {
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__up-text-box {
+    position: relative;
+
+    padding-top: 43px;
+    padding-bottom: 26px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: $customer-review-bg-color;
+
+    z-index: -3;
+  }
+
+  &__bg {
+    position: absolute;
+    min-width: 180px;
+    height: 217px;
+    left: 50px;
+    right: 50px;
+    bottom: 20px;
+
+    background-image: url('../././images/mobile/bg-customer-review-1x.png');
+
+    z-index: -2;
+  }
+
+  &__up-text {
+    position: relative;
+    max-width: 157px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+        &__icon {
+    fill: $footer-underlined-color;
+    position: absolute;
+  left: 4px;
+  right: 99px;
+  top: -15px;
+   z-index: -1;
+  }
+
+  &__circle-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__circle {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $button-primary-hover;
+  }
+
+  &__sub-text-box {
+    padding-bottom: 42px;
+    max-width: 172px;
+    margin-top: 18px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__sub-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+  }
+}
