@@ -1,0 +1,280 @@
+.contacts {
+    // padding-left: 40px;
+    // padding-right: 40px;
+    background-color: $section-bg-color;
+
+    @include for-desktop {
+    background-image: url('../images/desctop/contacts-bg-min.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/desctop/contacts-bg-2x-min.png);
+                };
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    &_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    transform: translateY(-84px);
+    
+    @include for-tablet {
+        transform: translateY(-78px);
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+    @include for-desktop {
+        transform: translateY(-102px);
+        padding-right: 115px;
+        padding-left: 115px;
+    }
+    }
+}
+
+.contacts__title-hidden {
+    display: none;
+}
+
+.card-list {
+    margin-bottom: 54px;
+
+    @include for-tablet {
+    display: flex;
+    margin-bottom: 81px;
+    }
+
+    @include for-desktop {
+    margin-bottom: 86px;
+    }
+}
+
+.card-list__item {
+    background-color: $main-light-color;
+    border-radius: 24px;
+    padding: 43px 20px ;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    &:not(:last-child) {
+        @media screen and (max-width: 767px){
+            margin-bottom: 20px;
+        }
+        @include for-phone {
+            width: 220px;
+        }
+        @include for-tablet {
+            margin-right: 20px;
+        }
+        @include for-desktop {
+            margin-right: 31px;
+            width: 330px;
+        }
+    }
+
+    @include for-tablet {
+        width: calc((100% - 2 * 20px) / 3);
+        padding: 50px 31px;
+        font-size: 14px;
+    }
+    
+    @include for-desktop {
+        width: calc((100% - 2 * 31px) / 3);
+        padding-top: 51px;
+        padding-bottom: 62px;
+        padding-left: 43px;
+        padding-right: 43px;
+        font-size: 16px;
+    }
+}
+
+.card-list__item-name {
+    width: 80px;
+    height: 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $contacts-second-bg-color;
+    color: $main-light-color;
+    text-transform: uppercase;
+    @include for-tablet {
+        font-size: 16px;
+        border-radius: 6px;
+        width: 73px;
+        height: 28px;
+    }
+    &_green {
+        background-color: $contacts-bg-color;
+        width: 130px;
+        @include for-tablet {
+            width: 138px;
+        }
+    }
+}
+
+.card-list__box {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &::after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-width: 250px;
+        height: 1px;
+        content: '';
+        background-color: $footer-underlined-color;
+    }
+    @include for-tablet {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @include for-desktop {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.card-list__up-text {
+    margin-bottom: 10px;
+    @include for-tablet {
+        margin-bottom: 14px;
+    }
+    @include for-desktop {
+        margin-bottom: 10px;
+    }
+}
+
+.card-list__text {
+    line-height: 1.5;
+    color: $secondary-text-color;
+    @include for-tablet {
+        line-height: 1.66;
+    }
+    @include for-desktop {
+        line-height: 1.83;
+    }
+}
+
+.card-list__times {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    
+        @include for-tablet {
+            margin-bottom: 16px;
+        }
+        @include for-desktop {
+            margin-bottom: 15px;
+        }
+    }
+    &_pink {
+        color: $secondary-bg-color;
+    }
+}
+
+.card-list__contacts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    @include for-tablet {
+        adding-top: 30px;
+    }
+    @include for-desktop {
+        padding-top: 32px;
+    }
+}
+
+.card-list__link {
+    line-height: 1.5;
+    font-style: normal;
+    color: $secondary-text-color;
+    @include for-tablet {
+        line-height: 1.83;
+    }
+}
+
+.contacts__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include for-tablet {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.contacts__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 161px;
+    height: 44px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    transition-duration: 250ms;
+
+    &:first-child {
+        background-color: $accent-color;
+        color: $main-light-color;
+        margin-bottom: 10px;
+
+        &:hover,
+        &:focus {
+        background-color: $button-contacts-hover;
+        }
+        @include for-tablet {
+        margin-bottom: 0;
+        margin-right: 15px;
+        width: 191px;
+        }
+        @include for-desktop {
+        width: 198px;
+        }
+    }
+
+    &:last-child {
+        background-color: $main-light-color;
+        color: $accent-color;
+
+        &:hover,
+        &:focus {
+            background-color: $button-secondary-hover;
+        }
+
+        @include for-tablet {
+        width: 174px;
+        }
+        @include for-desktop {
+        width: 180px;
+        }
+    }
+}
+
+.contacts__btn-arrow {
+    display: block;
+    width: 4px;
+    height: 8px;
+    margin-left: 13px;
+    stroke: $main-light-color;
+    &_stroke-accent {
+        stroke: $accent-color;
+    }
+    @include for-tablet {
+        margin-left: 13px;
+    }
+    @include for-desktop {
+        margin-left: 14px;
+    }
+}
