@@ -6,6 +6,9 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: none;
   }
+  @include for-desktop {
+    background-position: bottom -20px right;
+  }
   background-image: url(../images/mobile/cow-bg-mob-min.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -13,21 +16,29 @@
 
   padding-top: 125px;
   padding-bottom: 39px;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/mobile/cow-bg-mob-min.png);
+  }
+  @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/cow-bg2x-mob-min.png);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desctop/cow-bg-desct-min.png);
+  }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/desctop/cow-bg2x-desct-min.png);
+  }
+
   &__image-cow {
     @include for-tablet {
       flex-basis: calc((100% - 20px) / 2);
     }
   }
-  // &__milk-bg {
-  //   position: absolute;
-  //   top: 750px;
-  //   left: 0;
-
-  //   width: 100vw;
-  //   @media screen and (min-width: 768px) and (max-width: 1279px) {
-  //     display: none;
-  //   }
-  // }
   &__content-box {
     @include for-tablet {
       display: flex;
@@ -85,17 +96,10 @@
     }
   }
   &__button-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-left: 50px;
     @include for-tablet {
       margin-left: 360px;
       margin-top: 56px;
     }
-    background: #ffffff;
-    border-radius: 22px;
     width: 176px;
     height: 44px;
     @include for-desktop {
@@ -104,5 +108,11 @@
       bottom: 115px;
       margin: 0;
     }
+  }
+  &__button-arrow {
+    stroke: #d41443;
+    width: 7px;
+    height: 12px;
+    margin-left: 12px;
   }
 }
