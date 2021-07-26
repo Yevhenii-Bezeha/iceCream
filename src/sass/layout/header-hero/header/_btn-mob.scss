@@ -1,4 +1,15 @@
 .btn-mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+
+  &__icon {
+    stroke: $accent-color;
+  }
+
   @include for-desktop {
     display: none;
   }

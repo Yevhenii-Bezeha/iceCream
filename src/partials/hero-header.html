@@ -1,37 +1,40 @@
 <!-- header -->
 
 <header>
-  <div class="header-container">
+  <div class="container header-container">
     <a class="logo-link" href="./">
       <picture>
-        <source srcset="./images/mobile/logo-min.png 1x" media="(min-width: 320px)" />
+        <source
+          srcset="./images/mobile/logo-2x-min.png 2x, ./images/mobile/logo-min.png 1x"
+          media="(min-width: 320px)"
+        />
         <img class="logo-img" src="./images/mobile/logo-min.png" alt="Логотип" />
       </picture>
     </a>
 
     <nav class="nav-menu">
       <ul class="nav-menu__list">
-        <li class="nav-menu__item"><a class="nav-menu__link" lang="en" href="#">Home</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__link" lang="en" href="#">About us</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Home</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">About us</a></li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" lang="en" href="#">How it’s made?</a>
+          <a class="nav-menu__link" href="#">How it’s made?</a>
         </li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" lang="en" href="#">Our products</a>
+          <a class="nav-menu__link" href="#">Our products</a>
         </li>
-        <li class="nav-menu__item"><a class="nav-menu__link" lang="en" href="#">Contact</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Contact</a></li>
       </ul>
     </nav>
     <button class="btn btn-mob" type="button">
-      <svg class="" width="20" height="12">
-        <use></use>
+      <svg class="btn-mob__icon" width="20" height="12">
+        <use href="./images/sprite.svg#burger"></use>
       </svg>
     </button>
-    <button class="btn btn-buy" type="button" lang="en">
+    <button class="btn btn-buy btn_bgc_main-light-color" type="button">
       Buy now
       <span>
-        <svg class="" width="4" height="8">
-          <use href=""></use>
+        <svg class="btn-buy__icon" width="7" height="10">
+          <use href="./images/sprite.svg#button-arrow"></use>
         </svg>
       </span>
     </button>
@@ -42,44 +45,100 @@
 
 <section class="section-hero">
   <div class="container">
-    <h1 class="hero-title" lang="en">
-      ice cream made with <span class="hero-title__passion" lang="en">passion</span>
-    </h1>
+    <div class="title-wrap">
+      <h1 class="hero-title">
+        ice cream made with <span class="hero-title__passion">passion</span>
+      </h1>
+      <div class="infrastructure-wrap">
+        <span class="infrastructure-info">16</span
+        ><span class="infrastructure-info__bottom infrastructure-info__bottom_margin">cafes</span>
+        <span class="infrastructure-info">23</span
+        ><span class="infrastructure-info__bottom">food trucks</span>
+      </div>
+    </div>
     <div class="title-btn-wrap">
-      <button class="btn" type="button" lang="en">Products</button>
-      <button class="btn" type="button" lang="en">How it’s made?</button>
+      <button class="btn hero-title__btn btn_bgc_accent" type="button">Products</button>
+      <button class="btn hero-title__btn btn_bgc_main-light-color" type="button">
+        How it’s made?
+      </button>
     </div>
 
     <div class="bg-circle"></div>
 
-    <div class="infrastructure-wrap">
-      <span class="infrastructure-info">16</span>
-      <span class="infrastructure-info">23</span>
-    </div>
     <div class="additional-info">
-      <img class="hero-img hero-img_left" src="" alt="Прозрачный кувшин с молоком" />
+      <picture class="hero-img hero-img_left">
+        <source
+          srcset="
+            ./images/desctop/hero-milk2x-desct-min.png 2x,
+            ./images/desctop/hero-milk-desct-min.png   1x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/hero-milk2x-tabl-min.png 2x,
+            ./images/tablet/hero-milk-tabl-min.png   1x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="./images/tablet/hero-milk-tabl-min.png" alt="Прозрачный кувшин с молоком" />
+      </picture>
+
       <div class="additional-info__wrap">
         <p class="additional-info__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button class="btn" type="button">
-          <svg class="" width="4" height="8">
-            <use></use>
+        <button class="btn btn-arrow btn_bgc_main-light-color" type="button">
+          <svg class="btn-arrow__icon" width="7" height="10">
+            <use href="./images/sprite.svg#arrow-right"></use>
           </svg>
         </button>
-        <img class="hero-img hero-img_right" src="" alt="Девушка с мороженым" />
+        <picture class="hero-img hero-img_right">
+          <source
+            srcset="
+              ./images/desctop/hero-girl2x-desktop-min.png 2x,
+              ./images/desctop/hero-girl-desktop-min.png   1x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/hero-girl2x-tabl-min.png 2x,
+              ./images/tablet/hero-girl-tabl-min.png   1x
+            "
+            media="(min-width: 768px)"
+          />
+          <img src="./images/tablet/hero-girl-tabl-min.png" alt="Девушка с мороженым" />
+        </picture>
       </div>
     </div>
     <div class="hero-img-center">
       <picture class="hero-img">
         <source
           srcset="
+            ./images/desctop/hero-isecr2x-desct-min.png 2x,
+            ./images/desctop/hero-isecr-desct-min.png   1x
+          "
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="
+            ./images/tablet/hero-isecr2x-tabl-min.png 2x,
+            ./images/tablet/hero-isecr-tabl-min.png   1x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
             ./images/mobile/hero-isecr-mob2x-min.png 2x,
             ./images/mobile/hero-isecr-mob-min.png   1x
           "
-          media="(min-width: 320px)"
+          media="(max-width: 480px)"
         />
+
         <img src="./images/mobile/hero-isecr-mob2x-min.png" alt="Разноцветное мороженое в рожке" />
       </picture>
     </div>

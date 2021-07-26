@@ -1,6 +1,14 @@
 .btn-buy {
   display: none;
   @include for-tablet {
-    display: block;
+    margin-left: 30px;
+    display: flex;
+    width: 160px;
+    height: 40px;
+  }
+
+  &__icon {
+    stroke: $accent-color;
+    margin-left: 14px;
   }
 }
