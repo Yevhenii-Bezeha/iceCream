@@ -3,7 +3,7 @@
         <h2 class="contacts__title-hidden">Contacts</h2>
         <ul class="contacts__list card-list">
             <li class="card-list__item">
-                <h3 class="card-list__item-name">Cafe</h3>
+                <span class="card-list__item-name">Cafe</span>
                 <div class="card-list__box">
                     <span  class="card-list__up-text">Chicago</span>
                     <p class="card-list__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -26,7 +26,7 @@
                 </div>
             </li>
             <li class="card-list__item">
-                <h3 class="card-list__item-name card-list__item-name_green">Foodtruck</h3>
+                <span class="card-list__item-name card-list__item-name_green">Foodtruck</span>
                 <div class="card-list__box">
                     <span  class="card-list__up-text">Los Angeles</span>
                     <p class="card-list__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -49,7 +49,7 @@
                 </div>
             </li>
             <li class="card-list__item">
-                <h3 class="card-list__item-name">Cafe</h3>
+                <span class="card-list__item-name">Cafe</span>
                 <div class="card-list__box">
                     <span  class="card-list__up-text">New York</span>
                     <p class="card-list__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -73,7 +73,7 @@
             </li>
         </ul>
         <div class="contacts__buttons">
-            <button class="btn btn_bgc_accent contacts__btn" type="button">Our locations 
+            <button class="btn btn_bgc_accent contacts__btn" data-locations-open type="button">Our locations 
                 <svg class="contacts__btn-arrow">
                     <use href="./images/sprite.svg#button-arrow"></use> 
                 </svg>
@@ -84,6 +84,40 @@
                 </svg>
             </button>
         </div>
-        
     </div>
+
+<div class="locations is-hidden" data-locations>
+    <button class="btn locations__btn-close" data-locations-close type="button">
+        <svg class="locations__close-icon" width="19" height="19">
+            <use href="./images/sprite.svg#close"></use>
+        </svg>
+    </button>
+    <div class="locations__container">
+        <h2 class="locations__title">locations</h2>
+        <ul class="locations__list">
+            <li class="locations__item">
+                <div>
+                    <iframe class="locations__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190256.0989922024!2d-87.87204725005861!3d41.833647849425006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1627389155662!5m2!1sru!2sua">
+                    </iframe>
+                </div>
+                <p class="locations__name">The best shop in Chicago</p> 
+            </li> 
+            <li class="locations__item">
+                <div>
+                    <iframe class="locations__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2740301507!2d-118.69191803815512!3d34.02016131205836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1627390154548!5m2!1sru!2sua">
+                    </iframe>
+                </div>
+                <p class="locations__name">The best shop in Los Angeles</p> 
+            </li>
+            <li class="locations__item">
+                <div>
+                    <iframe class="locations__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73873.70598102699!2d-74.03576218815441!3d40.693511598805095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1627392561284!5m2!1sru!2sua">
+                    </iframe>
+                </div>
+                <p class="locations__name">The best shop in New York</p> 
+            </li>
+        </ul>
+        <h2 class="locations__title">Welome to <span class="locations__title_pink">ice cream</span> paradise</h2>
+    </div>
+</div>
 </section>

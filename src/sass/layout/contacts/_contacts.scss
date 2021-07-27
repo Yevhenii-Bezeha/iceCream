@@ -1,13 +1,11 @@
 .contacts {
-    // padding-left: 40px;
-    // padding-right: 40px;
     background-color: $section-bg-color;
 
     @include for-desktop {
     background-image: url('../images/desctop/contacts-bg-min.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/desctop/contacts-bg-2x-min.png);
-                };
+        };
     background-repeat: no-repeat;
     background-size: contain;
     }
@@ -16,19 +14,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-right: 50px;
-    padding-left: 50px;
     transform: translateY(-84px);
-    
+    @media screen and (max-width: 467px) {
+        padding-right: 50px;
+        padding-left: 50px;
+}
     @include for-tablet {
         transform: translateY(-78px);
-        padding-right: 36px;
-        padding-left: 36px;
     }
     @include for-desktop {
         transform: translateY(-102px);
-        padding-right: 115px;
-        padding-left: 115px;
     }
     }
 }
@@ -62,26 +57,21 @@
         @media screen and (max-width: 767px){
             margin-bottom: 20px;
         }
-        @include for-phone {
-            width: 220px;
-        }
         @include for-tablet {
             margin-right: 20px;
         }
         @include for-desktop {
-            margin-right: 31px;
-            width: 330px;
+            margin-right: 30px;
         }
     }
-
     @include for-tablet {
-        width: calc((100% - 2 * 20px) / 3);
+        width: calc((100% - 40px) / 3);
         padding: 50px 31px;
         font-size: 14px;
     }
     
     @include for-desktop {
-        width: calc((100% - 2 * 31px) / 3);
+        width: calc((100% - 60px) / 3);
         padding-top: 51px;
         padding-bottom: 62px;
         padding-left: 43px;
@@ -144,24 +134,17 @@
     }
 }
 
-.card-list__up-text {
-    margin-bottom: 10px;
-    @include for-tablet {
-        margin-bottom: 14px;
-    }
-    @include for-desktop {
-        margin-bottom: 10px;
-    }
-}
-
 .card-list__text {
     line-height: 1.5;
     color: $secondary-text-color;
+    margin-top: 10px;
     @include for-tablet {
         line-height: 1.66;
+        margin-top: 14px;
     }
     @include for-desktop {
         line-height: 1.83;
+        margin-top: 10px;
     }
 }
 
@@ -214,26 +197,14 @@
 }
 
 .contacts__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 161px;
     height: 44px;
     border-radius: 22px;
-    font-weight: 700;
-    font-size: 16px;
     line-height: 1.31;
-    transition-duration: 250ms;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:first-child {
-        background-color: $accent-color;
-        color: $main-light-color;
         margin-bottom: 10px;
-
-        &:hover,
-        &:focus {
-        background-color: $button-contacts-hover;
-        }
         @include for-tablet {
         margin-bottom: 0;
         margin-right: 15px;
@@ -245,14 +216,6 @@
     }
 
     &:last-child {
-        background-color: $main-light-color;
-        color: $accent-color;
-
-        &:hover,
-        &:focus {
-            background-color: $button-secondary-hover;
-        }
-
         @include for-tablet {
         width: 174px;
         }
@@ -264,8 +227,8 @@
 
 .contacts__btn-arrow {
     display: block;
-    width: 4px;
-    height: 8px;
+    width: 7px;
+    height: 11px;
     margin-left: 13px;
     stroke: $main-light-color;
     &_stroke-accent {
@@ -277,4 +240,133 @@
     @include for-desktop {
         margin-left: 14px;
     }
+}
+
+
+.locations {
+    z-index: 200;
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: $section-bg-color;
+    background-image: url('../images/desctop/contacts-bg-min.png');
+    background-repeat: repeat;
+    // padding: 48px 0 48px 40px;
+    .locations__container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 10px 30px 10px;
+    }
+    &.is-hidden {
+        transform: translateY(-100%);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.locations__close-icon{
+    stroke: $accent-color;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+}
+
+.locations__btn-close {
+    z-index: 2;
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    background: unset;
+    border: none;
+    &:hover .locations__close-icon, &:focus .locations__close-icon {
+        stroke: $main-text-color;
+    }
+}
+
+.locations__map {
+    width: 100%;
+    border: none;
+    @include for-desktop {
+        height: 500px;
+    }
+}
+
+.locations__title {
+    text-align: center;
+    font-family: Titan One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    color: $accent-color;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    @media screen and (max-width: 767px) {
+        width: 300px;
+    }
+    @include for-desktop {
+        font-size: 58px;
+    }
+
+    &_pink {
+        color: #ffa5ba;
+    }
+}
+
+.locations__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include for-desktop {
+        flex-direction: row;
+    }
+}
+
+.locations__item {
+    background-color: $main-light-color;
+    border-radius: 24px;
+    padding: 15px 10px ;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.86;
+    text-transform: uppercase;
+    width: 100%;
+    &:not(:last-child) {
+        @media screen and (max-width: 767px){
+            margin-bottom: 20px;
+        }
+        @include for-tablet {
+            margin-bottom: 20px;
+        }
+        @include for-desktop {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+    @include for-phone {
+        width: 360px;
+    }
+    @include for-tablet {
+        width: 565px;
+        font-size: 14px;
+    }
+    @include for-desktop {
+        height: 560px;
+        width: 380px;
+        font-size: 18px;
+    }
+}
+
+.locations__name {
+    text-align: center;
 }
