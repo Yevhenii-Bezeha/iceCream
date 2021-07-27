@@ -2,54 +2,5 @@
  * Все паршалы c этой папки подключаются сюда.
  */
 /* создаешь отдельные файлы scss, которые нужны внутри этой папки и подключаешь их сюда в файл. Этот файл уже подключен в main.scss */
-@import './title';
-.gallery {
-  background: linear-gradient($section-bg-color 40%, $main-light-color 40%);
-}
-.gallery-desctop {
-  display: flex;
-  align-items: center;
-
-  &__pic {
-    transition: 500ms;
-    margin-top: 3%;
-  }
-  &__pic:hover {
-    transform: scale(1.6);
-    z-index: 3;
-  }
-  //   &__pic_up {
-  //     margin-bottom: 5%;
-  //   }
-  &__pic_left {
-    margin-right: 5px;
-  }
-  &__pic_width {
-    width: 50%;
-  }
-  &__pic-one_up {
-    padding-bottom: 4%;
-  }
-  //   @include for-tablet {
-  //     display: none;
-  //   }
-  //   @include for-phone {
-  //     display: none;
-  //   }
-}
-.gallery-desctop__box {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0.4%;
-  &_down {
-    padding-top: 5%;
-  }
-  &_up {
-    padding-bottom: 4%;
-  }
-}
-// .gallary__tablet-mobile {
-//   @include for-desktop {
-//     display: none;
-//   }
-// }
+@import './gallary-section';
+@import './mobile-menu';
