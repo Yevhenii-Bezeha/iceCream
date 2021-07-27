@@ -1,10 +1,14 @@
 .btn-buy {
   display: none;
   @include for-tablet {
-    margin-left: 30px;
+    margin-left: 11px;
     display: flex;
     width: 160px;
     height: 40px;
+  }
+
+  @include for-desktop {
+    margin-left: 0;
   }
 
   &__icon {

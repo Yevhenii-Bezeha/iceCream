@@ -14,15 +14,17 @@
 
     <nav class="nav-menu">
       <ul class="nav-menu__list">
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Home</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#">About us</a></li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" href="#">How it’s made?</a>
+          <a class="nav-menu__link nav-menu__link_current" href="#">Home</a>
+        </li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#about">About us</a></li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link" href="#about">How it’s made?</a>
         </li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" href="#">Our products</a>
+          <a class="nav-menu__link" href="#products">Our products</a>
         </li>
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Contact</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <button class="btn btn-mob" type="button">
@@ -33,7 +35,7 @@
     <button class="btn btn-buy btn_bgc_main-light-color" type="button">
       Buy now
       <span>
-        <svg class="btn-buy__icon" width="7" height="10">
+        <svg class="btn-buy__icon" width="7" height="11">
           <use href="./images/sprite.svg#button-arrow"></use>
         </svg>
       </span>
@@ -44,7 +46,7 @@
 <!-- section-hero -->
 
 <section class="section-hero">
-  <div class="container">
+  <div class="container hero-container">
     <div class="title-wrap">
       <h1 class="hero-title">
         ice cream made with <span class="hero-title__passion">passion</span>
@@ -72,7 +74,7 @@
             ./images/desctop/hero-milk2x-desct-min.png 2x,
             ./images/desctop/hero-milk-desct-min.png   1x
           "
-          media="(min-width: 1200px)"
+          media="(min-width: 1280px)"
         />
         <source
           srcset="
@@ -100,7 +102,7 @@
               ./images/desctop/hero-girl2x-desktop-min.png 2x,
               ./images/desctop/hero-girl-desktop-min.png   1x
             "
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
           />
           <source
             srcset="
@@ -120,7 +122,7 @@
             ./images/desctop/hero-isecr2x-desct-min.png 2x,
             ./images/desctop/hero-isecr-desct-min.png   1x
           "
-          media="(min-width: 1200px)"
+          media="(min-width: 1280px)"
         />
 
         <source

@@ -5,4 +5,8 @@
   @include for-tablet {
     margin-right: auto;
   }
+
+  @include for-desktop {
+    margin-right: 0;
+  }
 }
