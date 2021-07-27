@@ -1,0 +1,249 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms linear;
+  z-index: 3;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  padding: 25px;
+  width: 93%;
+  background-color: rgba(255, 245, 246, 0.95);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms linear;
+  &__close-btn {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 135, 245, 0.1);
+    background-color: $main-light-color;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include for-tablet {
+      right: 10px;
+      top: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__closed-icon {
+    stroke: $secondary-bg-color;
+    width: 18px;
+    height: 18px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @include for-phone {
+    max-width: 390px;
+  }
+
+  @include for-tablet {
+    max-width: 450px;
+    padding: 20px 30px 20px;
+    background-color: $section-bg-color;
+    width: 100%;
+  }
+
+  @include for-desktop {
+    max-width: 528px;
+    padding: 40px;
+  }
+}
+.modal__close-btn:hover .modal__closed-icon,
+.modal__close-btn:focus .modal__closed-icon {
+  stroke: $accent-color;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-left: auto;
+  &__title {
+    color: $accent-color;
+    margin-bottom: 10px;
+    font-family: 'Titan One';
+    font-size: 17px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    @include for-tablet {
+      font-size: 20px;
+    }
+    @include for-desktop {
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+    padding: 13px 54px 13px 55px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: $main-light-color;
+    background-color: $secondary-bg-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background: $accent-color;
+    }
+  }
+  &__btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'DM Sans';
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+  &_textarea_indent_bottom {
+    margin-bottom: 10px;
+    @include for-tablet {
+      margin-bottom: 10px;
+    }
+    @include for-desktop {
+      margin-bottom: 20px;
+    }
+  }
+  &_label_indent_bottom {
+    margin-bottom: 10px;
+  }
+  &__input {
+    margin-top: 4px;
+    padding: 12px 12px 12px 42px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+  &__comment-text {
+    padding: 12px 16px;
+    margin-top: 4px;
+    resize: none;
+    width: 100%;
+    height: 65px;
+    outline: none;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+    @include for-tablet {
+      height: 90px;
+    }
+    @include for-desktop {
+      height: 120px;
+    }
+  }
+  &__icon-input {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    fill: $background-main-color;
+    width: 18px;
+    height: 18px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__checkbox {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    @include for-tablet {
+      margin-bottom: 10px;
+    }
+    @include for-desktop {
+      margin-bottom: 30px;
+    }
+  }
+  &__checkbox-input {
+    appearance: none;
+    position: absolute;
+  }
+  &__icon {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    fill: $section-bg-color;
+  }
+  &__box-icon {
+    position: absolute;
+    top: 3px;
+    left: 13px;
+    width: 16px;
+    height: 15px;
+
+    display: inline-block;
+  }
+  &__text-polisy {
+    position: relative;
+    margin-left: 36px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $secondary-text-color;
+    &_link_color {
+      color: $secondary-bg-color;
+    }
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: -23px;
+      display: inline-block;
+      content: '';
+      width: 16px;
+      height: 15px;
+      margin-right: 8px;
+      border: 2px solid $secondary-bg-color;
+    }
+  }
+}
+.form-group input,
+.form-group textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-group__input:focus,
+.form-group__comment-text:focus {
+  border-color: $accent-color;
+}
+.form-group input[type='checkbox'] {
+  width: 16px;
+  height: 15px;
+}
+
+.form-group__input:focus ~ .form-group__icon-input,
+.form-group__input:hover ~ .form-group__icon-input {
+  fill: $accent-color;
+}
+
+.form-group__checkbox-input:checked + .form-group__box-icon {
+  fill: $main-light-color;
+  background-color: $accent-color;
+}
+
+.form-group__checkbox-input:checked ~ .form-group__text-polisy::before {
+  border: none;
+}
