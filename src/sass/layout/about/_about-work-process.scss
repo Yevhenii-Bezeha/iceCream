@@ -5,6 +5,9 @@
   background-color: $section-bg-color;
   padding-top: 125px;
   padding-bottom: 39px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 66px;
+  }
   @include for-desktop {
     background-position: bottom -20px right;
   }
@@ -115,7 +118,7 @@
     @include for-desktop {
       position: absolute;
       right: 300px;
-      bottom: 115px;
+      bottom: 107px;
       margin: 0;
     }
   }

@@ -6,7 +6,12 @@
   @include for-tablet {
     display: flex;
     justify-content: space-between;
+    margin-right: 40px;
   }
+  @include for-desktop {
+    margin-right: 0;
+  }
+
   @media screen and (max-width: 767px) {
     padding-right: 70px;
   }
@@ -18,14 +23,11 @@
     line-height: 1.14;
     letter-spacing: 0.04em;
     color: $accent-color;
-
     @include for-desktop {
       font-size: 58px;
       line-height: 1.14;
     }
-    @include for-tablet {
-      margin-top: 36px;
-    }
+
     &_mb {
       margin-bottom: 15px;
     }
@@ -86,6 +88,9 @@
   &__item {
     @include for-tablet {
       width: calc((100% - 120px) / 3);
+    }
+    @include for-desktop {
+      width: calc((100% - 60px) / 3);
     }
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
