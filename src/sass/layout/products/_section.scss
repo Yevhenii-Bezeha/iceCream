@@ -240,3 +240,36 @@
   border-radius: 50%;
   background-color: $main-light-color;
 }
+.products-list__list-activ {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  border-radius: 80px;
+  color: white;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-bottom: 63px;
+  padding-right: 24px;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  background-image: linear-gradient(rgba(112, 38, 38, 0.2), rgba(0, 0, 0, 0.8)),
+    url(../images/desctop/gallery/2x/pic9.png);
+  display: none;
+}
+.products-list__btn {
+  &:hover,
+  &:focus {
+    background-color: $button-secondary-hover;
+  }
+}
+
+.products-list__btn:hover .products-list__display {
+  display: block;
+}
