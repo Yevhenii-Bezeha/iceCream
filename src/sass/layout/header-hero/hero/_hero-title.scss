@@ -1,6 +1,6 @@
 .hero-title {
   width: 225px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   font-family: Titan One;
   font-size: 26px;
@@ -31,24 +31,43 @@
       line-height: 0.91;
     }
   }
+
+  @include for-desktop {
+    width: 277px;
+    height: 137px;
+    margin-bottom: 25px;
+
+    font-size: 38px;
+    line-height: 1.16;
+
+    &__passion {
+      font-size: 58px;
+      line-height: 0.91;
+    }
+  }
 }
 
 .title-btn-wrap {
   & > .btn:nth-child(1) {
-    margin-right: 8px;
+    margin-right: 14px;
   }
 }
 
 .hero-title__btn {
   padding: 7px 14px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+
+  @include for-desktop {
+    padding: 11px 19px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
 .title-wrap {
   display: flex;
-  justify-content: space-between;
 }
 
 .infrastructure-wrap {
@@ -59,12 +78,17 @@
   @include for-tablet {
     display: flex;
     flex-direction: column;
-    width: 51px;
+    margin-left: 488px;
+    width: 44px;
+  }
+
+  @include for-desktop {
+    margin-left: 682px;
+    width: 75px;
   }
 }
 
 .infrastructure-info {
-  margin-right: 8px;
   position: relative;
   font-family: Titan One;
   font-size: 28px;
@@ -72,6 +96,11 @@
   letter-spacing: 0.04em;
   text-align: right;
   color: $accent-color;
+
+  @include for-desktop {
+    font-size: 46px;
+    line-height: 1.15;
+  }
 
   &::after {
     content: '';
@@ -82,21 +111,35 @@
     background-color: $main-light-color;
 
     position: absolute;
-    top: -4px;
+    top: -3px;
     right: -6px;
     z-index: -1;
+
+    @include for-desktop {
+      width: 30px;
+      height: 30px;
+      top: -6px;
+      right: -15px;
+    }
   }
 }
 
 .infrastructure-info__bottom {
   font-size: 8px;
   line-height: 1.25;
-  // text-align: center;
   color: $main-light-color;
+
+  @include for-desktop {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
 .infrastructure-info__bottom_margin {
   margin-bottom: 13px;
-  padding-right: 10px;
   text-align: right;
+
+  @include for-desktop {
+    margin-bottom: 20px;
+  }
 }
