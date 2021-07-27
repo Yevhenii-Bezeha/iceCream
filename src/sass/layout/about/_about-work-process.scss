@@ -2,9 +2,11 @@
   position: relative;
 }
 .about-section {
-  background-color: #fff5f6;
+  background-color: $section-bg-color;
+  padding-top: 125px;
+  padding-bottom: 39px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background-image: none;
+    padding-bottom: 66px;
   }
   @include for-desktop {
     background-position: bottom -20px right;
@@ -12,10 +14,7 @@
   background-image: url(../images/mobile/cow-bg-mob-min.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom 75px right;
-
-  padding-top: 125px;
-  padding-bottom: 39px;
+  background-position: bottom 95px right;
   @media screen and (max-width: 767px) {
     background-image: url(../images/mobile/cow-bg-mob-min.png);
   }
@@ -32,6 +31,9 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/desctop/cow-bg2x-desct-min.png);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
   }
 
   &__image-cow {
@@ -58,9 +60,12 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
-    color: #000000;
+    color: $main-text-color;
     &_size_margin {
       margin-bottom: 47px;
+    }
+    &_mb {
+      margin-bottom: 10px;
     }
     @include for-tablet {
       font-size: 14px;
@@ -75,7 +80,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
-    color: #907e82;
+    color: $secondary-text-color;
     @include for-tablet {
       font-size: 14px;
       line-height: 1.76;
@@ -88,6 +93,11 @@
   &__text-box {
     margin-top: 50px;
     margin-bottom: 17px;
+    @media screen and (max-width: 767px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
     @include for-tablet {
       flex-basis: calc((100% - 20px) / 2);
     }
@@ -96,6 +106,9 @@
     }
   }
   &__button-box {
+    @media screen and (max-width: 767px) {
+      margin-left: 40px;
+    }
     @include for-tablet {
       margin-left: 360px;
       margin-top: 56px;
@@ -105,12 +118,12 @@
     @include for-desktop {
       position: absolute;
       right: 300px;
-      bottom: 115px;
+      bottom: 107px;
       margin: 0;
     }
   }
   &__button-arrow {
-    stroke: #d41443;
+    stroke: $accent-color;
     width: 7px;
     height: 12px;
     margin-left: 12px;
