@@ -1,1 +1,8 @@
+.logo-link {
+  display: block;
+  width: 199px;
 
+  @include for-tablet {
+    margin-right: auto;
+  }
+}

@@ -3,24 +3,31 @@
   z-index: 0;
   padding-top: 193px;
   padding-bottom: 160px;
-  background-color: pink;
+  background-color: $background-main-color;
   overflow: hidden;
-}
 
-.infrastructure-wrap,
-.additional-info {
-  display: none;
+  @include for-tablet {
+    padding-top: 102px;
+    padding-bottom: 34px;
+  }
 }
 
 .bg-circle {
   position: absolute;
   z-index: -1;
   top: 83px;
-  left: 35px;
+  right: -55px;
   width: 346px;
   height: 346px;
   border-radius: 50%;
-  background-color: rgb(245, 151, 167);
+  background-color: $secondary-bg-color;
+
+  @include for-tablet {
+    top: 31px;
+    right: 137px;
+    width: 324px;
+    height: 324px;
+  }
 }
 
 .hero-img-center {
@@ -28,6 +35,59 @@
   height: 410px;
   position: absolute;
   z-index: -1;
-  left: 117px;
+  right: 32px;
   top: 92px;
+
+  @include for-tablet {
+    top: 63px;
+    right: 247px;
+    width: 143px;
+    height: 336px;
+  }
+}
+
+.additional-info {
+  display: none;
+}
+
+.additional-info {
+  @include for-tablet {
+    display: flex;
+
+    &__wrap {
+      margin-top: 66px;
+      margin-left: 120px;
+      width: 114px;
+    }
+
+    &__text {
+      margin-bottom: 7px;
+      font-size: 8px;
+      line-height: 150%;
+      color: $main-light-color;
+    }
+  }
+}
+
+.hero-img {
+  position: absolute;
+
+  &_right {
+    bottom: 0;
+    right: 34px;
+  }
+
+  &_left {
+    bottom: 28px;
+    left: 34px;
+  }
+}
+
+.btn-arrow {
+  width: 18px;
+  height: 18px;
+
+  &__icon {
+    fill: $accent-color;
+  }
 }

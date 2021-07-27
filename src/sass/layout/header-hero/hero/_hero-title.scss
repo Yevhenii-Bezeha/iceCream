@@ -1,6 +1,6 @@
 .hero-title {
   width: 225px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   font-family: Titan One;
   font-size: 26px;
@@ -8,7 +8,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $main-light-color;
 
   &__passion {
     font-family: Titan One;
@@ -16,6 +16,87 @@
     line-height: 0.97;
     text-transform: uppercase;
 
-    color: #d41443;
+    color: $accent-color;
   }
+
+  @include for-tablet {
+    width: 162px;
+    height: 80px;
+
+    font-size: 22px;
+    line-height: 1.14;
+
+    &__passion {
+      font-size: 34px;
+      line-height: 0.91;
+    }
+  }
+}
+
+.title-btn-wrap {
+  & > .btn:nth-child(1) {
+    margin-right: 8px;
+  }
+}
+
+.hero-title__btn {
+  padding: 7px 14px;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.title-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infrastructure-wrap {
+  display: none;
+}
+
+.infrastructure-wrap {
+  @include for-tablet {
+    display: flex;
+    flex-direction: column;
+    width: 51px;
+  }
+}
+
+.infrastructure-info {
+  margin-right: 8px;
+  position: relative;
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: $accent-color;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $main-light-color;
+
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    z-index: -1;
+  }
+}
+
+.infrastructure-info__bottom {
+  font-size: 8px;
+  line-height: 1.25;
+  // text-align: center;
+  color: $main-light-color;
+}
+
+.infrastructure-info__bottom_margin {
+  margin-bottom: 13px;
+  padding-right: 10px;
+  text-align: right;
 }
