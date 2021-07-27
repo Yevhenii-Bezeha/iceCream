@@ -180,8 +180,15 @@
     line-height: 1.5;
     font-style: normal;
     color: $secondary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
     @include for-tablet {
         line-height: 1.83;
+    }
+    &:hover,
+    &:focus {
+        color: $accent-color;
     }
 }
 
