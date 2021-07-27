@@ -1,65 +1,65 @@
 .mob-menu {
   position: absolute;
   z-index: 1;
-  width: 100vw;
-  min-width: 320px;
+  width: 250px;
+
   height: 100vh;
-  left: 0;
+  right: 0;
   top: 0;
   background-color: $mob-menu-bg-color;
-  padding: 48px 0 48px 25px;
-  .container {
+  padding: 45px 20px;
+
+  .mob-container {
     position: relative;
     height: 100%;
 
-    // min-height: 450px;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
   }
 }
+.mob-menu-bg {
+  position: absolute;
+  top: 123px;
+  //   background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 42px);
+
+  height: 220px;
+  width: 250px;
+  margin-left: -20px;
+}
 .modal-close-icon {
-  z-index: 1;
-  fill: $main-light-color;
+  stroke: $main-light-color;
+}
+.mob-menu__btn-buy {
+  height: 44px;
+  margin-top: 18px;
+}
+.btn-buy__icon {
+  stroke: $accent-color;
+  margin-left: 14px;
 }
 
-.menu-open {
-  background: unset;
-  border: none;
-  font-size: 26px;
-  &:focus {
-    fill: var(--accent-color);
-    transition: solid 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-  }
-  //   @media screen and (min-width: 768px) {
-  //     display: none;
-  //   }
+.mob-menu-list {
+  margin-top: 32px;
 }
-
-// .mob-menu-list {
-// }
-
 .mob-menu-list__item {
   &:not(:last-child) {
-    margin-bottom: 36px;
+    margin-bottom: 22px;
   }
 }
 .mob-menu-list__link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
   text-align: center;
-  letter-spacing: 0.02em;
+
   text-decoration: none;
-  color: #212121;
+  color: $main-light-color;
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
     transition: solid 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
   }
@@ -67,14 +67,14 @@
 
 .mob-menu__btn-close {
   position: absolute;
-  right: 35px;
+  right: 1px;
   top: -22px;
   border: none;
   background-color: $mob-menu-bg-color;
   cursor: pointer;
   &:hover .modal-close-icon,
   &:focus .modal-close-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
     transition: solid 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
   }
