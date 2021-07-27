@@ -3,19 +3,13 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  border: none;
   border-radius: 20px;
   font-weight: 700;
-  font-size: 8px;
-  line-height: 1.25;
+  font-size: 16px;
+  line-height: 21px;
   text-align: center;
   border: 1px solid transparent;
   cursor: pointer;
-
-  @include for-tablet {
-    font-size: 16px;
-    line-height: 21px;
-  }
 
   &_bgc_accent {
     background-color: $accent-color;
