@@ -3,8 +3,13 @@
         <p class="section-title__up-text about-section__up-text_mb">tradition and love</p>
         <h2 class="section-title about-section__title_mb">how it’s made?</h2>
             <div class="about-section__content-box">
-                <img class="about-section__image-cow" src="./images/mobile/cow-mob-min.png" alt="picture of a cow and a decanter of milk">
-                <!-- <img class="about-section__milk-bg" src="./images/mobile/cow-bg-mob-min.png" alt=""> -->
+                <picture>
+                    <source srcset="./images/desctop/cow2x-desct-min.png 2x, ./images/desctop/cow-desct-min.png 1x" media="(min-width: 1280px)">
+                    <source srcset="./images/tablet/cow2x-tabl-min.png 2x, ./images/tablet/cow-tabl-min.png 1x" media="(min-width: 768px)">
+                    <source srcset="./images/mobile/cow-mob2x-min.png 2x, ./images/mobile/cow-mob-min.png 1x" media="(min-width: 320px)">
+                    <img class="about-section__image-cow" src="./images/mobile/cow-mob-min.png"
+                        alt="picture of a cow and a decanter of milk">
+                </picture>
                 <div class="about-section__text-box">
                     <p class="about-section__subtext about-section__subtext_size_margin">Fusce ut velit laoreet, tempus arcu eu, molestie
                         tortor. Nam vel justo cursus,
@@ -17,8 +22,11 @@
                         Aliquam erat volutpat. Aenean accumsan.</p>
                 </div>
             </div>
-        <div class="about-section__button-box">
-            <button type="button">Read more</button>
-        </div>
+            <button class="btn btn_bgc_main-light-color about-section__button-box" type="button">
+                Read more
+                <svg class="about-section__button-arrow">
+                    <use href="./images/sprite.svg#button-arrow"></use>
+                </svg>
+            </button>
     </div>
 </section>
