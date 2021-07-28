@@ -22,7 +22,7 @@
                     <p class="about-section__suptext">Aliquam erat volutpat. Aenean accumsan.</p>
                 </div>
             </div>
-            <button class="btn btn_bgc_main-light-color about-section__button-box" type="button" data-modal-open>
+            <button data-about-modal-open class="btn btn_bgc_main-light-color about-section__button-box" type="button">
                 Read more
                 <svg class="about-section__button-arrow">
                     <use href="./images/sprite.svg#button-arrow"></use>
@@ -30,3 +30,16 @@
             </button>
     </div>
 </section>
+<div data-about-modal-close class="about-modal-backdrop is-hidden-about-modal" data-about-modal>
+    <div class="about-modal">
+        <button class="about-modal__close-btn" data-about-modal-close type="button">
+            <svg class="about-modal__closed-icon">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <p class="about-modal__title">how it’s made?</p>
+        <p class="about-modal__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quasi aut iure nemo illo eaque reiciendis, voluptatem voluptas distinctio deserunt. Est eligendi dolore veniam! Sit beatae ut cum illo fugit porro aliquam dolorum voluptatem, laudantium minus. Similique ullam labore, facilis asperiores dolorem, harum accusantium neque sequi laudantium veritatis, eius ea!
+        </p>
+    </div>
+</div>
