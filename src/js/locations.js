@@ -9,6 +9,7 @@
     refs.closeLocationsBtn.addEventListener('click', toggleLocations);
 
     function toggleLocations() {
-        refs.locations.classList.toggle('is-hidden');
+        refs.locations.classList.toggle('locations__is-hidden');
+        document.body.classList.toggle("body-hidden");
     }
 })();
