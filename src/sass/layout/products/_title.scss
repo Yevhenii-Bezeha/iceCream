@@ -1,1 +1,15 @@
-// файл для примера
+.section-title_position {
+  margin-top: 15px;
+}
+.section-title__up-text {
+  padding-top: 121px;
+  @include for-phone {
+    padding-top: 121px;
+  }
+  @include for-tablet {
+    padding-top: 122px;
+  }
+  @include for-desktop {
+    padding-top: 0px;
+  }
+}

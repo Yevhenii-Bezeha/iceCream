@@ -4,21 +4,7 @@
     padding-bottom: 119px;
   }
 }
-.section-title_position {
-  margin-top: 15px;
-}
-.section-title__up-text {
-  padding-top: 121px;
-  @include for-phone {
-    padding-top: 121px;
-  }
-  @include for-tablet {
-    padding-top: 122px;
-  }
-  @include for-desktop {
-    padding-top: 0px;
-  }
-}
+
 .products-list__box_cream-color {
   background-color: $background-main-color;
 }
@@ -27,13 +13,6 @@
 }
 .products-list__box_milkshakes-color {
   background-color: $contacts-bg-color;
-}
-
-.products-list__btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
 }
 
 .products-list__item {
@@ -52,19 +31,11 @@
     width: 220px;
     margin-left: 10px;
     margin-right: 10px;
-    // &:last-child {
-    //   margin-right: -30px;
-    // }
   }
   @include for-desktop {
     width: 329px;
   }
 
-  // @include for-tablet {
-  //   &:last-child {
-  //     margin-right: -30px;
-  //   }
-  // }
   @include for-desktop {
     top: 210px;
     margin-right: 30px;
@@ -88,8 +59,14 @@
 .products-image {
   position: absolute;
   top: -113px;
+  transition: 500ms;
+  margin-top: 3%;
   @include for-desktop {
     top: -210px;
+  }
+  &:hover {
+    transform: scale(1.1);
+    z-index: 3;
   }
 }
 .products-image_position {
@@ -127,8 +104,6 @@
   }
 }
 .products-list__text {
-  // display: flex;
-  // justify-content: center;
   text-align: center;
   color: $main-light-color;
   font-family: DM Sans;
@@ -159,9 +134,7 @@
   display: flex;
   justify-content: center;
 }
-.products-list__btn {
-  margin-top: 62px;
-}
+
 .products-list {
   @include for-tablet {
     display: flex;
@@ -174,16 +147,8 @@
     justify-content: center;
   }
 }
-.btn__pocition {
-  display: flex;
-  justify-content: center;
-}
-.btn__pocition {
-  padding-bottom: 41px;
-}
 .container-products {
   @include for-phone {
-    // margin-bottom: 98px;
     width: 480px;
   }
   @include for-tablet {
@@ -259,17 +224,7 @@
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  background-image: linear-gradient(rgba(112, 38, 38, 0.2), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(211, 117, 117, 0.2), rgba(170, 89, 89, 0.8)),
     url(../images/desctop/gallery/2x/pic9.png);
-  display: none;
-}
-.products-list__btn {
-  &:hover,
-  &:focus {
-    background-color: $button-secondary-hover;
-  }
-}
-
-.products-list__btn:hover .products-list__display {
-  display: block;
+  opacity: 0;
 }
