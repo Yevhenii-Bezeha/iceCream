@@ -20,6 +20,10 @@
 
       color: $main-light-color;
 
+      transition: color;
+      transition-timing-function: $timing-function-main;
+      transition-duration: $duration-main;
+
       &:hover,
       &:focus {
         color: $accent-color;

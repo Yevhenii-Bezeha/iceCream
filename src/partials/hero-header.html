@@ -58,17 +58,19 @@
         ><span class="infrastructure-info__bottom">food trucks</span>
       </div>
     </div>
-    <div class="title-btn-wrap">
-      <button class="btn hero-title__btn btn_bgc_accent" type="button">Products</button>
-      <button class="btn hero-title__btn btn_bgc_main-light-color" type="button">
-        How it’s made?
-      </button>
-    </div>
 
-    <div class="bg-circle"></div>
+    <ul class="hero-btns">
+      <li class="hero-btns__item hero-btns__item_prod">
+        <a href="#products" class="hero-btns__link hero-btns__link_prod anchor">Products</a>
+      </li>
+      <li class="hero-btns__item hero-btns__item_about">
+        <a href="#about" class="hero-btns__link hero-btns__link_about anchor">How it’s made?</a>
+      </li>
+    </ul>
+    <div class="bg-circle wow bounceIn"></div>
 
     <div class="additional-info">
-      <picture class="hero-img hero-img_left">
+      <picture class="hero-img hero-img_left wow bounceInLeft" data-wow-delay="1s">
         <source
           srcset="
             ./images/desctop/hero-milk2x-desct-min.png 2x,
@@ -96,7 +98,7 @@
             <use href="./images/sprite.svg#arrow-right"></use>
           </svg>
         </button>
-        <picture class="hero-img hero-img_right">
+        <picture class="hero-img hero-img_right wow bounceInRight" data-wow-delay="1s">
           <source
             srcset="
               ./images/desctop/hero-girl2x-desktop-min.png 2x,
@@ -116,7 +118,7 @@
       </div>
     </div>
     <div class="hero-img-center">
-      <picture class="hero-img">
+      <picture class="hero-img animate__flip wow flip">
         <source
           srcset="
             ./images/desctop/hero-isecr2x-desct-min.png 2x,
