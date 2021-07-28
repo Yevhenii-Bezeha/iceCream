@@ -1,0 +1,19 @@
+.products-list__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 62px;
+  &:hover,
+  &:focus {
+    background-color: $button-secondary-hover;
+  }
+  &:hover + .products-list__list-activ {
+    opacity: 1;
+  }
+}
+.position-btn-content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 41px;
+}
