@@ -13,7 +13,7 @@
   }
   background-image: url(../images/mobile/cow-bg-mob-min.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: bottom 95px right;
   @media screen and (max-width: 767px) {
     background-image: url(../images/mobile/cow-bg-mob-min.png);
@@ -106,6 +106,8 @@
     }
   }
   &__button-box {
+    width: 176px;
+    height: 44px;
     @media screen and (max-width: 767px) {
       margin-left: 40px;
     }
@@ -113,8 +115,6 @@
       margin-left: 360px;
       margin-top: 56px;
     }
-    width: 176px;
-    height: 44px;
     @include for-desktop {
       position: absolute;
       right: 300px;

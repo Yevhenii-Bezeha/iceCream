@@ -65,7 +65,7 @@
     stroke: $secondary-bg-color;
     width: 18px;
     height: 18px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke 250ms $timing-function-main;
   }
   &__text {
     font-weight: 500;
@@ -90,7 +90,7 @@
     padding: 40px;
   }
 }
-.modal__close-btn:hover .modal__closed-icon,
-.modal__close-btn:focus .modal__closed-icon {
+.about-modal__close-btn:hover .about-modal__closed-icon,
+.about-modal__close-btn:focus .about-modal__closed-icon {
   stroke: $accent-color;
 }
