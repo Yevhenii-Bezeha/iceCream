@@ -17,14 +17,14 @@
         <li class="nav-menu__item">
           <a class="nav-menu__link nav-menu__link_current" href="#">Home</a>
         </li>
-        <li class="nav-menu__item"><a class="nav-menu__link anchor" href="#about">About us</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link anchor" href="#about" darkHeroNavFirst>About us</a></li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link anchor" href="#about">How it’s made?</a>
+          <a class="nav-menu__link anchor" href="#about" darkHeroNavSecond>How it’s made?</a>
         </li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link anchor" href="#products">Our products</a>
+          <a class="nav-menu__link anchor" href="#products" darkHeroNavThird>Our products</a>
         </li>
-        <li class="nav-menu__item"><a class="nav-menu__link anchor" href="#contact">Contact</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link anchor" href="#contact" darkHeroNavFourth>Contact</a></li>
       </ul>
     </nav>
     <button class="btn btn-mob" type="button" data-menu-button>
@@ -32,7 +32,7 @@
         <use href="./images/sprite.svg#burger"></use>
       </svg>
     </button>
-    <button class="btn btn-buy btn_bgc_main-light-color" type="button" data-modal-open>
+    <button class="btn btn-buy btn_bgc_main-light-color" type="button" data-modal-open darkHeroButtonBuy>
       Buy now
       <span>
         <svg class="btn-buy__icon" width="7" height="11">
@@ -45,10 +45,10 @@
 
 <!-- section-hero -->
 
-<section class="section-hero">
+<section class="section-hero" dark-theme>
   <div class="container hero-container">
     <div class="title-wrap">
-      <h1 class="hero-title">
+      <h1 class="hero-title" darkHeroTitle>
         ice cream made with <span class="hero-title__passion">passion</span>
       </h1>
       <div class="infrastructure-wrap">
@@ -59,13 +59,13 @@
       </div>
     </div>
     <div class="title-btn-wrap">
-      <button class="btn hero-title__btn btn_bgc_accent" type="button">Products</button>
-      <button class="btn hero-title__btn btn_bgc_main-light-color" type="button">
+      <button class="btn hero-title__btn btn_bgc_accent" type="button" darkButtonHero>Products</button>
+      <button class="btn hero-title__btn btn_bgc_main-light-color" type="button"darkButtonHeroLight>
         How it’s made?
       </button>
     </div>
 
-    <div class="bg-circle"></div>
+    <div class="bg-circle" darkThemeBgCircle></div>
 
     <div class="additional-info">
       <picture class="hero-img hero-img_left">
@@ -91,8 +91,8 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button class="btn btn-arrow btn_bgc_main-light-color" type="button">
-          <svg class="btn-arrow__icon" width="7" height="10">
+        <button class="btn btn-arrow btn_bgc_main-light-color" type="button" darkHeroSvg>
+          <svg class="btn-arrow__icon" width="7" height="10" darkHeroSvgLight>
             <use href="./images/sprite.svg#arrow-right"></use>
           </svg>
         </button>
@@ -152,3 +152,9 @@
     <use href="./images/sprite.svg#button-arrow"></use>
   </svg>
 </a>
+
+<button class="dark-btn-mode" id="dark" >
+  <svg class="dark-btn-mode__icon">
+    <use href="/images/sprite.svg#icon-sun"></use>
+  </svg>
+</button>
