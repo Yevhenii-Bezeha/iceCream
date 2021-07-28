@@ -16,3 +16,5 @@
     $button-secondary-hover: #ECEBEB; // вторичний цвет ховера кнопки (серый)
     $footer-svg-background-color: #fea5bb; // фон svg контактов в футере
     $footer-underlined-color: #e1e1e1; // цвет бордера в футере
+    $duration-main: 250ms; //время для анимации текста
+    $timing-function-main: cubic-bezier(0.4, 0, 0.2, 1); // самая частая функция времени для анимации
