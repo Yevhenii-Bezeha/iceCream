@@ -8,6 +8,7 @@
   &:focus {
     background-color: $button-secondary-hover;
   }
+  &:focus + .products-list__list-activ,
   &:hover + .products-list__list-activ {
     opacity: 1;
   }

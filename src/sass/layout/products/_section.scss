@@ -4,7 +4,33 @@
     padding-bottom: 119px;
   }
 }
+// --------------------conteiner---------------------
+.container-products {
+  @include for-phone {
+    width: 480px;
+  }
+  @include for-tablet {
+    margin-bottom: 112px;
+  }
+  @include for-desktop {
+    margin-bottom: 119px;
+  }
+}
 
+// ----------------------------ul-----------------
+.products-list {
+  @include for-tablet {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include for-desktop {
+    display: flex;
+    justify-content: center;
+  }
+}
+// ----------------------------li-------------------
 .products-list__box_cream-color {
   background-color: $background-main-color;
 }
@@ -56,27 +82,7 @@
     max-width: 329px;
   }
 }
-.products-image {
-  position: absolute;
-  top: -113px;
-  transition: 500ms;
-  margin-top: 3%;
-  @include for-desktop {
-    top: -210px;
-  }
-  &:hover {
-    transform: scale(1.1);
-    z-index: 3;
-  }
-}
-.products-image_position {
-  display: flex;
-  justify-content: center;
-}
-.products-img {
-  display: flex;
-  justify-content: center;
-}
+
 .products-list__title {
   font-family: Titan One;
   font-style: normal;
@@ -135,29 +141,6 @@
   justify-content: center;
 }
 
-.products-list {
-  @include for-tablet {
-    display: flex;
-    justify-content: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  @include for-desktop {
-    display: flex;
-    justify-content: center;
-  }
-}
-.container-products {
-  @include for-phone {
-    width: 480px;
-  }
-  @include for-tablet {
-    margin-bottom: 112px;
-  }
-  @include for-desktop {
-    margin-bottom: 119px;
-  }
-}
 .products-list_position {
   margin-top: -78px;
   display: flex;
@@ -172,7 +155,29 @@
     display: none;
   }
 }
+// -----------------------image--------------
+.products-image {
+  position: absolute;
+  top: -113px;
+  transition: 500ms;
+  margin-top: 3%;
+  @include for-desktop {
+    top: -210px;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 3;
+  }
+}
+.products-image_position {
+  display: flex;
+  justify-content: center;
+}
 .products-img {
+  display: flex;
+  justify-content: center;
+
   @include for-phone {
     width: 249px;
     height: 252px;
