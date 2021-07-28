@@ -1,14 +1,22 @@
 .section-hero {
+  background-color: $background-main-color;
+  overflow: hidden;
+}
+
+.hero-container {
   position: relative;
   z-index: 0;
   padding-top: 193px;
   padding-bottom: 160px;
-  background-color: $background-main-color;
-  overflow: hidden;
 
   @include for-tablet {
     padding-top: 102px;
     padding-bottom: 34px;
+  }
+
+  @include for-desktop {
+    padding-top: 171px;
+    padding-bottom: 56px;
   }
 }
 
@@ -24,9 +32,16 @@
 
   @include for-tablet {
     top: 31px;
-    right: 137px;
+    right: 113px;
     width: 324px;
     height: 324px;
+  }
+
+  @include for-desktop {
+    top: 52px;
+    right: 167px;
+    width: 538px;
+    height: 538px;
   }
 }
 
@@ -36,13 +51,18 @@
   position: absolute;
   z-index: -1;
   right: 32px;
-  top: 92px;
+  bottom: 0;
 
   @include for-tablet {
-    top: 63px;
-    right: 247px;
+    right: 223px;
     width: 143px;
     height: 336px;
+  }
+
+  @include for-desktop {
+    right: 350px;
+    width: 236px;
+    height: 557px;
   }
 }
 
@@ -55,7 +75,7 @@
     display: flex;
 
     &__wrap {
-      margin-top: 66px;
+      margin-top: 65px;
       margin-left: 120px;
       width: 114px;
     }
@@ -63,8 +83,22 @@
     &__text {
       margin-bottom: 7px;
       font-size: 8px;
-      line-height: 150%;
+      line-height: 1.5;
       color: $main-light-color;
+    }
+  }
+
+  @include for-desktop {
+    &__wrap {
+      margin-top: 112px;
+      margin-left: 195px;
+      width: 200px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
     }
   }
 }
@@ -74,12 +108,12 @@
 
   &_right {
     bottom: 0;
-    right: 34px;
+    right: 15px;
   }
 
   &_left {
-    bottom: 28px;
-    left: 34px;
+    bottom: 45px;
+    left: 15px;
   }
 }
 
@@ -89,5 +123,15 @@
 
   &__icon {
     fill: $accent-color;
+  }
+
+  @include for-desktop {
+    width: 26px;
+    height: 26px;
+
+    &__icon {
+      width: 12px;
+      height: 8px;
+    }
   }
 }

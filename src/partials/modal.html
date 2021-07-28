@@ -1,0 +1,50 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal__close-btn" data-modal-close type="button">
+            <svg class="modal__closed-icon">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <form action="#" method="GET" class="form">
+            <p class="form__title">Leave your conacts, we <br>
+            will reach you</p>
+            <label class="form-group form-group_label_indent_bottom">
+                Name
+                <input class="form-group__input" type="text" name="name" placeholder=" " required>
+                <svg class="form-group__icon-input">
+                    <use href="./images/sprite.svg#icon-modal-person"></use>
+                </svg>
+            </label>
+            <label class="form-group form-group_label_indent_bottom">
+                Phone
+                <input class="form-group__input" type="tel" name="tel" placeholder=" " required>
+                <svg class="form-group__icon-input">
+                    <use href="./images/sprite.svg#icon-modal-phone"></use>
+                </svg>
+            </label>
+            <label class="form-group form-group_label_indent_bottom">
+                E-mail
+                <input class="form-group__input" type="email" name="mail" placeholder=" " required>
+                <svg class="form-group__icon-input">
+                    <use href="./images/sprite.svg#icon-modal-email"></use>
+                </svg>
+            </label>
+            <label class="form-group form-group_textarea_indent_bottom">
+                Comments
+                <textarea class="form-group__comment-text" name="comment" placeholder="Type here"></textarea>
+            </label>
+            <label class="form-group__checkbox">
+                <input class="form-group__checkbox-input" type="checkbox" name="polisy" required>
+                <span class="form-group__box-icon">
+                    <svg class="form-group__icon">
+                        <use href="./images/sprite.svg#icon-icon-check"></use>
+                    </svg>
+                </span>
+                <span class="form-group__text-polisy">I agree to receive offers and agree with the <a class="form-group__text-polisy_link_color" href="">Terms of Use</a></span>
+            </label>
+
+            <div class="form__btn-box"><button class="btn form__btn" type="submit">Send</button></div>
+
+        </form>
+    </div>
+</div>

@@ -1,11 +1,19 @@
 .advantages-section {
-  background: #fff5f6;
+  background: $section-bg-color;
   padding-bottom: 97px;
 }
 .advantages-list {
   @include for-tablet {
     display: flex;
     justify-content: space-between;
+    margin-right: 40px;
+  }
+  @include for-desktop {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-right: 70px;
   }
   &__numer {
     display: block;
@@ -14,15 +22,12 @@
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
-    color: #d41443;
-
+    color: $accent-color;
     @include for-desktop {
       font-size: 58px;
       line-height: 1.14;
     }
-    @include for-tablet {
-      margin-top: 36px;
-    }
+
     &_mb {
       margin-bottom: 15px;
     }
@@ -73,7 +78,7 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
-    color: #000000;
+    color: $main-text-color;
     @include for-desktop {
       font-size: 16px;
       line-height: 1.76;
@@ -84,7 +89,10 @@
     @include for-tablet {
       width: calc((100% - 120px) / 3);
     }
-    @media screen and (max-width: 768px) {
+    @include for-desktop {
+      width: calc((100% - 60px) / 3);
+    }
+    @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 38px;
       }

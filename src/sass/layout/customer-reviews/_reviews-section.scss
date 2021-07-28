@@ -47,29 +47,20 @@
     }
   }
 
-  &__bg {
-    position: absolute;
-    min-width: 180px;
-    height: 217px;
-    left: 30px;
-    right: 50px;
-    bottom: 20px;
-
-    background-image: url('../././images/mobile/bg-customer-review-1x.png');
-
-    z-index: -2;
+  &__up-text-inside-box {
+    background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
+    max-width: 180px;
+    max-height: 217px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include for-tablet {
       max-width: 544px;
       max-height: 108px;
-      top: 56px;
-      right: 36px;
-      left: 60px;
     }
 
     @include for-tablet {
       max-width: 822px;
-      top: 60px;
     }
   }
 
@@ -172,7 +163,7 @@
 
 .slick-dots li.slick-active button:before {
   content: '';
-  background-image: url(../././images/home-for-slider.svg);
+  background-image: url("../././images/home-for-slider.svg");
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
