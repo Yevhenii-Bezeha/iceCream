@@ -9,9 +9,13 @@
 }
 .contacts {
     background-color: $section-bg-color;
-
+    padding-bottom: 29px;
+    @include for-tablet {
+        padding-bottom: 80px;
+    }
     @include for-desktop {
     background-image: url('../images/desctop/contacts-bg-min.png');
+    padding-bottom: 63px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/desctop/contacts-bg-2x-min.png);
         };
@@ -224,7 +228,7 @@
     height: 44px;
     border-radius: 22px;
     line-height: 1.31;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $duration-main $timing-function-main, background-color $duration-main $timing-function-main;
 
     &:first-child {
         margin-bottom: 10px;
