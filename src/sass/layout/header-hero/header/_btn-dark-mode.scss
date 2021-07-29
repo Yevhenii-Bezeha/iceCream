@@ -16,11 +16,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 8%;
-  right: 6%;
+   top: 82%;
+  left: 5%;
 
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 
   position: fixed;
   z-index: 5;
@@ -29,15 +29,15 @@
   border-radius: 50%;
   background-color: rgba(212, 20, 67, 0.1);
 
-  @include for-tablet {
-    top: 0%;
-    right: 5%;
-  }
+  // @include for-tablet {
+  //   top: 0%;
+  //   right: 5%;
+  // }
 
-  @include for-desktop {
-    top: 4%;
-    right: 6%;
-  }
+  // @include for-desktop {
+  //   top: 4%;
+  //   right: 6%;
+  // }
 
   &__icon {
     fill: #d41443;
