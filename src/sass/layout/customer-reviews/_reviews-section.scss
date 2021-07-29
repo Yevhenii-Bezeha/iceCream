@@ -1,14 +1,8 @@
 .custoner-review {
   padding-top: 80px;
-  padding-bottom: 168px;
 
   @include for-tablet {
     padding-top: 121px;
-      padding-bottom: 203px;
-  }
-
-  @include for-desktop {
-    padding-bottom: 216px;
   }
 }
 
