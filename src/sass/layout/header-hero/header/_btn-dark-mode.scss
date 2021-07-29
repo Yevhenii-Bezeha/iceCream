@@ -2,6 +2,14 @@
   opacity: 1;
   cursor: pointer;
 
+  transition: transform;
+  transition-timing-function: $timing-function-main;
+  transition-duration: $duration-main;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
   @media screen and (max-width: 480px) {
     right: 2%;
   }
@@ -83,4 +91,3 @@
 // .darkCustBgThird {
 //   background-color: none;
 // }
-
