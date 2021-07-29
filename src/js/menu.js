@@ -5,11 +5,11 @@
 
   menuBtnRef.addEventListener('click', () => {
     mobileMenuRef.classList.toggle('is-open');
-    // document.body.classList.toggle('hidden');
+    document.body.classList.toggle('body-hidden');
   });
 
   mobileBtnClose.addEventListener('click', () => {
     mobileMenuRef.classList.toggle('is-open');
-    // document.body.classList.toggle('hidden');
+    document.body.classList.toggle('body-hidden');
   });
 })();
