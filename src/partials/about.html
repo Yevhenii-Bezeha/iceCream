@@ -1,45 +1,62 @@
-<section class="about-section" id="about" darkAboutBg>
-    <div class="container about-container">
-        <p class="section-title__up-text about-section__up-text_mb">tradition and love</p>
-        <h2 class="wow bounceInUp section-title about-section__title_mb">how it’s made?</h2>
-            <div class="about-section__content-box">
-                <picture class="wow bounceInLeft about-section__image-cow">
-                    <source srcset="./images/desctop/cow2x-desct-min.png 2x, ./images/desctop/cow-desct-min.png 1x" media="(min-width: 1280px)">
-                    <source srcset="./images/tablet/cow2x-tabl-min.png 2x, ./images/tablet/cow-tabl-min.png 1x" media="(min-width: 768px)">
-                    <source srcset="./images/mobile/cow-mob2x-min.png 2x, ./images/mobile/cow-mob-min.png 1x" media="(min-width: 320px)">
-                    <img src="./images/mobile/cow-mob-min.png"
-                        alt="picture of a cow and a decanter of milk">
-                </picture>
-                <div class="about-section__text-box">
-                    <p class="about-section__subtext about-section__subtext_size_margin" darkAboutText>Fusce ut velit laoreet, tempus arcu eu, molestie
-                        tortor. Nam vel justo cursus,
-                        faucibus lorem eget, egestas eros.
-                        Maecenas eleifend erat at justo fringilla.</p>
-                    <p class="about-section__suptext about-section__subtext_mb">Curabitur lacinia enim at ex blandit, vel
-                        pellentesque odio elementum. Mauris
-                        rhoncus orci in imperdiet placerat.
-                        Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
-                    <p class="about-section__suptext">Aliquam erat volutpat. Aenean accumsan.</p>
-                </div>
-            </div>
-            <button data-about-modal-open class="btn btn_bgc_main-light-color about-section__button-box" type="button" darkAboutBtn>
-                Read more
-                <svg class="about-section__button-arrow">
-                    <use href="./images/sprite.svg#button-arrow"></use>
-                </svg>
-            </button>
+<section class="about-section" darkAboutBg>
+  <div class="container about-container">
+    <p id="about" class="section-title__up-text about-section__up-text_mb">tradition and love</p>
+    <h2 class="wow bounceInUp section-title about-section__title_mb">how it’s made?</h2>
+    <div class="about-section__content-box">
+      <picture class="wow bounceInLeft about-section__image-cow">
+        <source
+          srcset="./images/desctop/cow2x-desct-min.png 2x, ./images/desctop/cow-desct-min.png 1x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/tablet/cow2x-tabl-min.png 2x, ./images/tablet/cow-tabl-min.png 1x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/mobile/cow-mob2x-min.png 2x, ./images/mobile/cow-mob-min.png 1x"
+          media="(min-width: 320px)"
+        />
+        <img src="./images/mobile/cow-mob-min.png" alt="picture of a cow and a decanter of milk" />
+      </picture>
+      <div class="about-section__text-box">
+        <p class="about-section__subtext about-section__subtext_size_margin" darkAboutText>
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about-section__suptext about-section__subtext_mb">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="about-section__suptext">Aliquam erat volutpat. Aenean accumsan.</p>
+      </div>
     </div>
+    <button
+      data-about-modal-open
+      class="btn btn_bgc_main-light-color about-section__button-box"
+      type="button"
+      darkAboutBtn
+    >
+      Read more
+      <svg class="about-section__button-arrow">
+        <use href="./images/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+  </div>
 </section>
 <div data-about-modal-close class="about-modal-backdrop is-hidden-about-modal" data-about-modal>
-    <div class="about-modal">
-        <button class="about-modal__close-btn" data-about-modal-close type="button">
-            <svg class="about-modal__closed-icon">
-                <use href="./images/sprite.svg#close"></use>
-            </svg>
-        </button>
-        <p class="about-modal__title">how it’s made?</p>
-        <p class="about-modal__text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quasi aut iure nemo illo eaque reiciendis, voluptatem voluptas distinctio deserunt. Est eligendi dolore veniam! Sit beatae ut cum illo fugit porro aliquam dolorum voluptatem, laudantium minus. Similique ullam labore, facilis asperiores dolorem, harum accusantium neque sequi laudantium veritatis, eius ea!
-        </p>
-    </div>
+  <div class="about-modal">
+    <button class="about-modal__close-btn" data-about-modal-close type="button">
+      <svg class="about-modal__closed-icon">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <p class="about-modal__title">how it’s made?</p>
+    <p class="about-modal__text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quasi aut iure nemo illo eaque
+      reiciendis, voluptatem voluptas distinctio deserunt. Est eligendi dolore veniam! Sit beatae ut
+      cum illo fugit porro aliquam dolorum voluptatem, laudantium minus. Similique ullam labore,
+      facilis asperiores dolorem, harum accusantium neque sequi laudantium veritatis, eius ea!
+    </p>
+  </div>
 </div>

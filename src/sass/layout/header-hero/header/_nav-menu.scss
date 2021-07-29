@@ -28,10 +28,10 @@
       &:focus {
         color: $accent-color;
       }
-
-      &_current {
-        color: $accent-color;
-      }
     }
   }
+}
+
+a.nav-menu__link_current {
+  color: $accent-color;
 }

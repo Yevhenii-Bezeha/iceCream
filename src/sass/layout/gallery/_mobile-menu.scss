@@ -72,10 +72,13 @@
 
   text-decoration: none;
   color: $main-light-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover,
   &:focus {
     color: $accent-color;
-    transition: solid 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
   }
 }
 
@@ -88,10 +91,12 @@
   cursor: pointer;
   &:hover .modal-close-icon,
   &:focus .modal-close-icon {
-    fill: $accent-color;
-    transition: solid 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+    stroke: $accent-color;
   }
+}
+
+.modal-close-icon {
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .body-hidden {
