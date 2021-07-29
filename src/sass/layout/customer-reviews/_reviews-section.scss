@@ -2,16 +2,19 @@
   padding-top: 80px;
 
   @include for-tablet {
-    padding-top: 121px;
+    padding-top: 100px;
   }
 }
 
 .review {
   &__img-box {
+    padding-top: 21px;
     margin-bottom: 29px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 
     @include for-tablet {
       margin-bottom: 19px;
@@ -19,6 +22,17 @@
 
     @include for-desktop {
       margin-bottom: 15px;
+    }
+  }
+
+  &__img {
+        width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    transition: transform $duration-main $timing-function-main;
+
+    &:hover {
+       transform: scale(1.3);
     }
   }
 
