@@ -6,7 +6,12 @@
         <use href="./images/sprite.svg#close"></use>
       </svg>
     </button>
-    <button class="btn mob-menu__btn-buy btn_bgc_main-light-color" type="button" data-modal-open>
+    <button
+      class="btn mob-menu__btn-buy btn_bgc_main-light-color"
+      type="button"
+      data-modal-open
+      data-buy-close
+    >
       Buy now
       <span>
         <svg class="btn-buy__icon" width="7" height="10">
@@ -14,7 +19,7 @@
         </svg>
       </span>
     </button>
-    <ul class="mob-menu-list">
+    <ul class="mob-menu-list" data-anchor-close>
       <li class="mob-menu-list__item">
         <a href="#" class="mob-menu-list__link nav-menu__link_current">Home</a>
       </li>
