@@ -130,6 +130,8 @@
 
   &__link {
     fill: $footer-svg-background-color;
+      transition-timing-function: $timing-function-main;
+      transition-duration: $duration-main;
 
     &:hover,
     &:focus {

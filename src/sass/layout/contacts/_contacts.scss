@@ -1,11 +1,4 @@
 .contacts__wrap {
-    padding-top: 170px;
-    @include for-tablet {
-        padding-top: 197px;
-    }
-    @include for-desktop {
-        padding-top: 234px;
-    }
 }
 .contacts {
     background-color: $section-bg-color;
